@@ -1,0 +1,51 @@
+{
+    "name": "github-pages",
+    "version": "1.0.0",
+    "description": "Github Pages",
+    "main": "app.js",
+    "dependencies": {
+        "webpack": "^4.39.2",
+        "webpack-cli": "^3.3.7"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "css-loader": "^3.2.0",
+        "file-loader": "^4.2.0",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.2.0",
+        "style-loader": "^1.0.0",
+        "webpack-dev-server": "^3.8.0"
+    },
+    "scripts": {
+        "dev": "webpack --config webpack.config.js",
+        "build": "webpack --mode production",
+        "watch": "webpack --watch --progress",
+        "start": "webpack-dev-server --open",
+        "test": "webpack --config webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wl13478647226/wl13478647226.github.io.git"
+    },
+    "keywords": [
+        "github",
+        "Travis",
+        "CI",
+        "Coveralls"
+    ],
+    "author": "wl",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wl13478647226/wl13478647226.github.io/issues"
+    },
+    "homepage": "https://github.com/wl13478647226/wl13478647226.github.io#readme",
+    "browserslist": [
+        "defaults",
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8",
+        "ios > 7"
+    ]
+}
