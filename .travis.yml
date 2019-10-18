@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "10"
+branches:
+  only:
+  - master    # 构建的分支
+before_install:
+  - export TZ='Asia/Shanghai'  # 设置时区
+install:
+  - npm install -g gitbook-cli # 安装编译工具
+script:
+  - gitbook build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: b00fba8276a2d2a93304be6ea90311cb4fef16b3  # github 上的token环境变量
+  verbose: true
+  on:
+    branch: master
